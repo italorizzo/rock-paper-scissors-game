@@ -1,0 +1,10 @@
+<header>
+  <app-header></app-header>
+</header>
+<main>
+  <router-outlet></router-outlet>
+</main>
+<footer>
+  <button (click)="rule = !rule" class="c-home__rulesBtn">regras</button>
+  <app-rules (ruleBtnClose)="rule = $event" *ngIf="rule" ></app-rules>
+</footer>

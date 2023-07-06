@@ -1,0 +1,52 @@
+.c-result__game{
+  margin-top: 2em;
+  display: flex;
+  height: 45vh;
+  align-items: end;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+.c-result__game span{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  background-color: hsla(238, 48%, 15%, 0.285);
+  width: 10em;
+  height: 10em;
+  border-radius: 15em;
+  transform: scale(1.5);
+}
+.c-result__game > div{
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+.c-result__game h2{
+  text-transform: uppercase;
+  font-size: 2em;
+  color: white;
+  margin-bottom: 4em;
+  letter-spacing: 3px;
+}
+.c-result__gameResult{
+  text-align: center;
+  margin: 8em;
+  position: relative;
+  top: 5em;
+}
+.c-result__gameResult h2{
+  font-size: 350%;
+  letter-spacing: -2px;
+  margin-bottom: 20px;
+}
+.c-result__gameResult button{
+  padding: 1em 2.3em 1em 2.3em;
+  text-transform: uppercase;
+  border-radius: 10px;
+  font-size: 120%;
+  font-weight: bold;
+  border: 0;
+  letter-spacing: 3px;
+  cursor: pointer;
+}

@@ -1,0 +1,50 @@
+.c-rules__card{
+  position: absolute;
+  z-index: 2;
+  top: calc(50% - 27.5vh);
+  left: calc(50% - 15vw);
+  box-shadow: 4px 4px 20px rgba(0, 0, 0, 0.368);
+
+  width: 30vw;
+  height: 55vh;
+
+  background-color: white;
+  border-radius: 0.8em;
+}
+.c-rules__card > div{
+  margin: 3em;
+}
+.c-rules__closeBtn{
+  cursor: pointer;
+  padding: 1em;
+  background-color: transparent;
+  background-position: center;
+  background-repeat: no-repeat;
+  border: 0;
+  background-image: url(../../assets/icon-close.svg);
+}
+.c-rules__imgRules{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 45vh;
+}
+.c-rules__headerCard{
+  display: flex;
+  text-transform: uppercase;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.c-rules__headerCard h2{
+  font-size: 210%;
+  color: hsl(229, 25%, 31%);
+}
+.c-rules__background{
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.491);
+  top: 0;
+  z-index: 1;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+}

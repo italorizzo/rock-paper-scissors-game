@@ -1,0 +1,6 @@
+.c-pedra__option{
+  background-color: hsl(349, 83%, 41%);
+}
+.c-pedra__option::after{
+  background-image: linear-gradient(to top,hsl(349, 71%, 52%), hsl(349, 70%, 56%));
+}

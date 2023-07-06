@@ -1,0 +1,6 @@
+.c-tesoura__option{
+  background-color: hsl(39, 91%, 43%);
+}
+.c-tesoura__option::after{
+  background-image: linear-gradient(to top, hsl(39, 89%, 49%), hsl(40, 84%, 53%));
+}

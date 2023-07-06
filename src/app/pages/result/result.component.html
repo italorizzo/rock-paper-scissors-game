@@ -1,0 +1,29 @@
+<section class="c-result__game">
+  <div class="c-result__yourChose">
+    <h2>sua escolha</h2>
+    <span>
+      <app-papel *ngIf="escolha == 0" ></app-papel>
+      <app-tesoura *ngIf="escolha == 1"></app-tesoura>
+      <app-pedra *ngIf="escolha == 2"></app-pedra>
+    </span>
+  </div>
+  <div class="c-result__gameResult">
+    <ng-container *ngIf="resultado != null" >
+      <h2>{{ resultado }}</h2>
+      <button routerLink="" >jogue novamente</button>
+    </ng-container>
+  </div>
+  <div class="c-result__opponentChose">
+    <ng-container *ngIf="escolhaCasa != null; else escolhendo">
+      <h2>a casa escolheu</h2>
+    </ng-container>
+    <ng-template #escolhendo>
+      <h2 >escolhendo...</h2>
+    </ng-template>
+    <span>
+      <app-papel *ngIf="escolhaCasa == 0" ></app-papel>
+      <app-tesoura *ngIf="escolhaCasa == 1"></app-tesoura>
+      <app-pedra *ngIf="escolhaCasa == 2"></app-pedra>
+    </span>
+  </div>
+</section>
